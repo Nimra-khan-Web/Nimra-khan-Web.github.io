@@ -1,0 +1,2037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sarah Khan | Mathematics Teacher</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f7f9fc;
+color:#333;
+overflow-x:hidden;
+}
+
+header{
+
+position:fixed;
+width:100%;
+top:0;
+left:0;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(255,255,255,.95);
+backdrop-filter:blur(15px);
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+z-index:1000;
+
+}
+
+.logo{
+
+font-size:28px;
+font-weight:700;
+color:#0b3d91;
+
+}
+
+nav a{
+
+text-decoration:none;
+margin-left:30px;
+color:#444;
+font-weight:500;
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#0b3d91;
+
+}
+
+
+/*==========================
+ HERO
+==========================*/
+
+.hero{
+
+position:relative;
+
+min-height:100vh;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+overflow:hidden;
+
+background:#071A3D;
+
+}
+
+/*==========================
+ BACKGROUND
+==========================*/
+
+.hero-bg{
+
+position:absolute;
+
+inset:0;
+
+overflow:hidden;
+
+z-index:0;
+
+}
+
+/*==========================
+ BLOBS
+==========================*/
+
+.blob{
+
+position:absolute;
+
+border-radius:50%;
+
+filter:blur(90px);
+
+opacity:.55;
+
+animation:float 12s ease-in-out infinite;
+
+}
+
+/* Blue */
+
+.blob1{
+
+width:420px;
+height:420px;
+
+background:#2563EB;
+
+top:-100px;
+left:-80px;
+
+}
+
+/* Cyan */
+
+.blob2{
+
+width:380px;
+height:380px;
+
+background:#38BDF8;
+
+bottom:-120px;
+right:-50px;
+
+animation-delay:3s;
+
+}
+
+/* Purple */
+
+.blob3{
+
+width:320px;
+height:320px;
+
+background:#7C3AED;
+
+top:35%;
+left:45%;
+
+animation-delay:6s;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translate(0,0) scale(1);
+
+}
+
+25%{
+
+transform:translate(60px,-40px) scale(1.1);
+
+}
+
+50%{
+
+transform:translate(-30px,40px) scale(.95);
+
+}
+
+75%{
+
+transform:translate(40px,20px) scale(1.08);
+
+}
+
+100%{
+
+transform:translate(0,0) scale(1);
+
+}
+
+}
+/*==============================
+FLOATING MATH SYMBOLS
+==============================*/
+
+.math-bg{
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+overflow:hidden;
+
+pointer-events:none;
+
+z-index:1;
+
+}
+
+.math-bg span{
+
+position:absolute;
+
+font-size:24px;
+
+font-weight:700;
+
+color:rgba(255,255,255,.08);
+
+user-select:none;
+
+animation:floatMath linear infinite;
+
+}
+
+/* Individual Positions */
+
+.math-bg span:nth-child(1){
+left:5%;
+top:15%;
+animation-duration:16s;
+font-size:38px;
+}
+
+.math-bg span:nth-child(2){
+left:18%;
+top:75%;
+animation-duration:20s;
+font-size:45px;
+}
+
+.math-bg span:nth-child(3){
+left:30%;
+top:25%;
+animation-duration:14s;
+}
+
+.math-bg span:nth-child(4){
+left:42%;
+top:60%;
+animation-duration:17s;
+font-size:34px;
+}
+
+.math-bg span:nth-child(5){
+left:55%;
+top:18%;
+animation-duration:18s;
+}
+
+.math-bg span:nth-child(6){
+left:68%;
+top:72%;
+animation-duration:22s;
+}
+
+.math-bg span:nth-child(7){
+left:78%;
+top:30%;
+animation-duration:15s;
+font-size:36px;
+}
+
+.math-bg span:nth-child(8){
+left:90%;
+top:15%;
+animation-duration:19s;
+}
+
+.math-bg span:nth-child(9){
+left:85%;
+top:78%;
+animation-duration:24s;
+font-size:40px;
+}
+
+.math-bg span:nth-child(10){
+left:10%;
+top:50%;
+animation-duration:18s;
+}
+
+.math-bg span:nth-child(11){
+left:25%;
+top:10%;
+animation-duration:15s;
+}
+
+.math-bg span:nth-child(12){
+left:40%;
+top:82%;
+animation-duration:21s;
+}
+
+.math-bg span:nth-child(13){
+left:58%;
+top:45%;
+animation-duration:17s;
+}
+
+.math-bg span:nth-child(14){
+left:72%;
+top:10%;
+animation-duration:19s;
+}
+
+.math-bg span:nth-child(15){
+left:92%;
+top:55%;
+animation-duration:20s;
+}
+
+.math-bg span:nth-child(16){
+left:35%;
+top:40%;
+animation-duration:15s;
+}
+
+.math-bg span:nth-child(17){
+left:12%;
+top:90%;
+animation-duration:18s;
+}
+
+.math-bg span:nth-child(18){
+left:50%;
+top:5%;
+animation-duration:23s;
+font-size:40px;
+}
+
+.math-bg span:nth-child(19){
+left:78%;
+top:90%;
+animation-duration:16s;
+}
+
+.math-bg span:nth-child(20){
+left:60%;
+top:85%;
+animation-duration:20s;
+}
+
+/* Animation */
+
+@keyframes floatMath{
+
+0%{
+
+transform:
+translateY(0)
+rotate(0deg);
+
+}
+
+50%{
+
+transform:
+translateY(-30px)
+rotate(8deg);
+
+}
+
+100%{
+
+transform:
+translateY(0)
+rotate(0deg);
+
+}
+
+}
+/*================ HERO CONTENT ================*/
+
+.hero-content{
+
+position:relative;
+
+z-index:5;
+
+width:90%;
+
+max-width:1300px;
+
+margin:auto;
+
+}
+
+.hero-left{
+
+max-width:700px;
+
+animation:fadeUp 1.2s ease;
+
+}
+
+/* Tag */
+
+.hero-tag{
+
+display:inline-block;
+
+padding:10px 22px;
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(15px);
+
+border:1px solid rgba(255,255,255,.2);
+
+border-radius:50px;
+
+color:white;
+
+font-size:14px;
+
+margin-bottom:30px;
+
+}
+
+/* Heading */
+
+.hero-title{
+
+font-size:72px;
+
+font-weight:800;
+
+line-height:1.1;
+
+color:white;
+
+margin-bottom:25px;
+
+}
+
+.hero-title span{
+
+display:block;
+
+background:linear-gradient(
+90deg,
+#60A5FA,
+#38BDF8,
+#FFFFFF,
+#60A5FA
+);
+
+background-size:300%;
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+animation:gradientMove 6s linear infinite;
+
+}
+
+/* Paragraph */
+
+.hero-description{
+
+font-size:20px;
+
+line-height:1.8;
+
+color:#D6E4FF;
+
+max-width:620px;
+
+margin-bottom:35px;
+
+}
+
+/* Typing */
+
+.typing-box{
+
+font-size:22px;
+
+font-weight:600;
+
+color:white;
+
+margin-bottom:45px;
+
+}
+
+#typing{
+
+color:#60A5FA;
+
+}
+
+/* Buttons */
+
+.hero-buttons{
+
+display:flex;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+/* Primary */
+
+.btn-primary{
+
+padding:18px 38px;
+
+border-radius:60px;
+
+background:linear-gradient(135deg,#2563EB,#60A5FA);
+
+color:white;
+
+text-decoration:none;
+
+font-weight:700;
+
+transition:.35s;
+
+box-shadow:0 15px 35px rgba(37,99,235,.4);
+
+}
+
+.btn-primary:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 20px 45px rgba(37,99,235,.5);
+
+}
+
+/* Secondary */
+
+.btn-secondary{
+
+padding:18px 38px;
+
+border-radius:60px;
+
+border:1px solid rgba(255,255,255,.2);
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(15px);
+
+text-decoration:none;
+
+color:white;
+
+font-weight:600;
+
+transition:.35s;
+
+}
+
+.btn-secondary:hover{
+
+background:white;
+
+color:#2563EB;
+
+transform:translateY(-6px);
+
+}
+
+/* Animation */
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(60px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+@keyframes gradientMove{
+
+0%{
+
+background-position:0%;
+
+}
+
+100%{
+
+background-position:300%;
+
+}
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.hero-title{
+
+font-size:50px;
+
+}
+
+.hero-description{
+
+font-size:18px;
+
+}
+
+}
+section{
+
+padding:90px 8%;
+
+}
+
+.title{
+
+text-align:center;
+font-size:40px;
+color:#0b3d91;
+margin-bottom:50px;
+
+}
+
+.about{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:50px;
+
+}
+
+.card{
+
+background:white;
+padding:35px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.card h3{
+
+margin-bottom:20px;
+color:#0b3d91;
+
+}
+
+.grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+
+}
+
+.service{
+
+background:white;
+padding:35px;
+border-radius:20px;
+transition:.4s;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.service:hover{
+
+transform:translateY(-10px);
+
+}
+
+.service h3{
+
+margin-bottom:15px;
+color:#0b3d91;
+
+}
+
+.skill{
+
+margin-bottom:25px;
+
+}
+
+.skill span{
+
+font-weight:600;
+
+}
+
+.bar{
+
+height:12px;
+background:#ddd;
+border-radius:50px;
+margin-top:10px;
+
+}
+
+.progress{
+
+height:12px;
+background:#0b3d91;
+border-radius:50px;
+width:0;
+
+}
+
+.stats{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+text-align:center;
+
+}
+
+.stat{
+
+background:#0b3d91;
+color:white;
+padding:40px;
+border-radius:20px;
+
+}
+
+.stat h2{
+
+font-size:45px;
+
+}
+
+.testimonials{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+
+}
+
+.testimonial{
+
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.contact{
+
+background:#0b3d91;
+color:white;
+text-align:center;
+
+}
+
+.contact h2{
+
+margin-bottom:20px;
+
+}
+
+.contact p{
+
+margin:12px 0;
+
+}
+
+/*========================
+FOOTER
+========================*/
+
+.footer{
+
+background:#06142D;
+
+position:relative;
+
+overflow:hidden;
+
+color:white;
+
+padding-top:0;
+
+}
+
+/* Animated Top Border */
+
+.footer-top{
+
+height:4px;
+
+background:linear-gradient(
+90deg,
+#2563EB,
+#38BDF8,
+#7C3AED,
+#2563EB
+);
+
+background-size:300%;
+
+animation:gradient 6s linear infinite;
+
+}
+
+.footer-container{
+
+max-width:1300px;
+
+margin:auto;
+
+padding:80px 30px 50px;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+gap:50px;
+
+}
+
+.footer-column h3{
+
+margin-bottom:25px;
+
+font-size:22px;
+
+}
+
+.footer-logo{
+
+font-size:34px;
+
+margin-bottom:20px;
+
+}
+
+.footer-logo span{
+
+color:#38BDF8;
+
+}
+
+.footer-column p{
+
+line-height:1.8;
+
+color:#B6C7E3;
+
+}
+
+.footer-column ul{
+
+list-style:none;
+
+}
+
+.footer-column ul li{
+
+margin-bottom:15px;
+
+color:#B6C7E3;
+
+transition:.3s;
+
+}
+
+.footer-column ul li:hover{
+
+transform:translateX(8px);
+
+color:white;
+
+}
+
+.footer-column a{
+
+color:#B6C7E3;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.footer-column a:hover{
+
+color:#38BDF8;
+
+}
+
+.footer-social{
+
+display:flex;
+
+justify-content:center;
+
+gap:18px;
+
+padding-bottom:35px;
+
+}
+
+.footer-social a{
+
+width:55px;
+
+height:55px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(10px);
+
+border-radius:50%;
+
+font-size:20px;
+
+color:white;
+
+transition:.35s;
+
+}
+
+.footer-social a:hover{
+
+background:#2563EB;
+
+transform:translateY(-8px) rotate(360deg);
+
+}
+
+.footer-bottom{
+
+border-top:1px solid rgba(255,255,255,.08);
+
+padding:25px 30px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+max-width:1300px;
+
+margin:auto;
+
+}
+
+.footer-bottom p{
+
+color:#9FB4D4;
+
+}
+
+.back-top{
+
+color:#38BDF8;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.back-top:hover{
+
+letter-spacing:1px;
+
+}
+
+@keyframes gradient{
+
+0%{
+
+background-position:0%;
+
+}
+
+100%{
+
+background-position:300%;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.footer-bottom{
+
+flex-direction:column;
+
+gap:20px;
+
+text-align:center;
+
+}
+
+}
+
+@media(max-width:900px){
+
+.hero{
+
+flex-direction:column-reverse;
+text-align:center;
+
+}
+
+.hero img{
+
+margin-bottom:50px;
+width:280px;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+nav{
+
+display:none;
+
+}
+
+}
+/*=========================
+CONTACT
+=========================*/
+
+.contact-section{
+
+padding:120px 8%;
+
+background:linear-gradient(135deg,#071A3D,#0F2C67);
+
+color:white;
+
+}
+
+.contact-container{
+
+max-width:1300px;
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:70px;
+
+align-items:center;
+
+}
+
+.contact-tag{
+
+display:inline-block;
+
+padding:10px 20px;
+
+border-radius:30px;
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(15px);
+
+margin-bottom:25px;
+
+font-size:14px;
+
+letter-spacing:2px;
+
+}
+
+.contact-info h2{
+
+font-size:52px;
+
+line-height:1.2;
+
+margin-bottom:25px;
+
+}
+
+.contact-info p{
+
+color:#D8E5FF;
+
+line-height:1.9;
+
+margin-bottom:40px;
+
+}
+
+.contact-card{
+
+display:flex;
+
+align-items:center;
+
+gap:20px;
+
+margin-bottom:25px;
+
+padding:20px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+border-radius:20px;
+
+transition:.35s;
+
+}
+
+.contact-card:hover{
+
+transform:translateX(12px);
+
+background:rgba(255,255,255,.14);
+
+}
+
+.contact-card i{
+
+width:60px;
+
+height:60px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+border-radius:50%;
+
+background:#2563EB;
+
+font-size:24px;
+
+}
+
+.contact-buttons{
+
+margin-top:35px;
+
+display:flex;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.whatsapp-btn,
+.email-btn{
+
+padding:15px 30px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.35s;
+
+}
+
+.whatsapp-btn{
+
+background:#25D366;
+
+color:white;
+
+}
+
+.email-btn{
+
+background:white;
+
+color:#2563EB;
+
+}
+
+.whatsapp-btn:hover,
+.email-btn:hover{
+
+transform:translateY(-6px);
+
+}
+
+.contact-form{
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(25px);
+
+padding:45px;
+
+border-radius:30px;
+
+}
+
+.input-group{
+
+position:relative;
+
+margin-bottom:30px;
+
+}
+
+.input-group input,
+.input-group textarea{
+
+width:100%;
+
+padding:18px;
+
+border:none;
+
+outline:none;
+
+background:rgba(255,255,255,.08);
+
+border-radius:14px;
+
+color:white;
+
+font-size:16px;
+
+}
+
+.input-group label{
+
+position:absolute;
+
+left:18px;
+
+top:18px;
+
+color:#BFD6FF;
+
+pointer-events:none;
+
+transition:.3s;
+
+}
+
+.input-group input:focus+label,
+.input-group textarea:focus+label,
+.input-group input:valid+label,
+.input-group textarea:valid+label{
+
+top:-12px;
+
+left:12px;
+
+font-size:13px;
+
+background:#071A3D;
+
+padding:2px 10px;
+
+border-radius:10px;
+
+}
+
+.contact-form button{
+
+width:100%;
+
+padding:18px;
+
+border:none;
+
+border-radius:50px;
+
+background:linear-gradient(135deg,#2563EB,#38BDF8);
+
+color:white;
+
+font-size:18px;
+
+font-weight:700;
+
+cursor:pointer;
+
+transition:.35s;
+
+}
+
+.contact-form button:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 15px 35px rgba(37,99,235,.4);
+
+}
+
+@media(max-width:950px){
+
+.contact-container{
+
+grid-template-columns:1fr;
+
+}
+
+.contact-info h2{
+
+font-size:38px;
+
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header id="header">
+
+    <a href="#" class="logo">
+        <span class="logo-icon">∑</span>
+        <span class="logo-text">Math<span>Mentor</span></span>
+    </a>
+
+    <nav>
+
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#subjects">Subjects</a>
+        <a href="#results">Results</a>
+        <a href="#experience">Experience</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+    <a href="#contact" class="hire-btn">
+        Book a Class
+    </a>
+
+</header>
+
+<section class="hero" id="home">
+
+    <!-- Animated Background -->
+
+    <div class="hero-bg">
+
+        <div class="math-bg">
+
+            <span>π</span>
+            <span>∑</span>
+            <span>√</span>
+            <span>x²</span>
+            <span>∞</span>
+            <span>f(x)</span>
+            <span>θ</span>
+            <span>Δ</span>
+            <span>∫</span>
+            <span>α</span>
+            <span>β</span>
+            <span>y=x²</span>
+            <span>cosθ</span>
+            <span>sinθ</span>
+            <span>lim</span>
+            <span>log</span>
+            <span>tan</span>
+            <span>π</span>
+            <span>√64</span>
+            <span>2+2=4</span>
+        
+        </div>
+
+    </div>
+
+    <!-- Hero Content -->
+
+    <div class="hero-content">
+
+        <div class="hero-left">
+    
+            <span class="hero-tag">
+                ★ Trusted by 500+ Students
+            </span>
+    
+            <h1 class="hero-title">
+    
+                Master
+                <span>Mathematics</span>
+    
+                with Confidence
+    
+            </h1>
+    
+            <p class="hero-description">
+    
+                Helping students achieve outstanding grades through
+                conceptual learning, problem-solving, and personalized
+                one-to-one coaching.
+    
+            </p>
+    
+            <div class="typing-box">
+    
+                I Teach
+    
+                <span id="typing"></span>
+    
+            </div>
+    
+            <div class="hero-buttons">
+    
+                <a href="#contact" class="btn-primary">
+    
+                    Book Free Trial
+    
+                </a>
+    
+                <a href="#" class="btn-secondary">
+    
+                    ▶ Watch Demo
+    
+                </a>
+    
+            </div>
+    
+        </div>
+    
+    </div>
+
+        <!-- We will add content here later -->
+
+    </div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About Me</h2>
+
+<div class="about">
+
+<div class="card">
+
+<h3>Who I Am</h3>
+
+<p>
+
+I am an experienced Mathematics teacher dedicated to helping students understand mathematical concepts rather than memorizing formulas. My teaching focuses on logical thinking, confidence building, and achieving outstanding exam results.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Qualifications</h3>
+
+<ul>
+
+<li>BSc Mathematics</li>
+<li>MSc Mathematics</li>
+<li>Certified Cambridge Teacher</li>
+<li>8+ Years Teaching Experience</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2 class="title">Subjects I Teach</h2>
+
+<div class="grid">
+
+<div class="service">
+
+<h3>O Level Mathematics</h3>
+
+<p>Complete syllabus coverage with past paper practice.</p>
+
+</div>
+
+<div class="service">
+
+<h3>A Level Mathematics</h3>
+
+<p>Pure Mathematics, Statistics and Mechanics.</p>
+
+</div>
+
+<div class="service">
+
+<h3>IGCSE Mathematics</h3>
+
+<p>Conceptual learning and exam preparation.</p>
+
+</div>
+
+<div class="service">
+
+<h3>Entry Test Preparation</h3>
+
+<p>SAT, ECAT, NTS and university admission tests.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="experience">
+
+<h2 class="title">Teaching Skills</h2>
+
+<div class="card">
+
+<div class="skill">
+
+<span>Concept Building</span>
+
+<div class="bar">
+
+<div class="progress" data-width="98%"></div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<span>Exam Preparation</span>
+
+<div class="bar">
+
+<div class="progress" data-width="95%"></div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<span>Problem Solving</span>
+
+<div class="bar">
+
+<div class="progress" data-width="96%"></div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<span>Student Motivation</span>
+
+<div class="bar">
+
+<div class="progress" data-width="94%"></div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Student Results</h2>
+
+<div class="stats">
+
+<div class="stat">
+
+<h2 class="counter" data-target="500">0</h2>
+
+<p>Students Taught</p>
+
+</div>
+
+<div class="stat">
+
+<h2 class="counter" data-target="98">0</h2>
+
+<p>% Success Rate</p>
+
+</div>
+
+<div class="stat">
+
+<h2 class="counter" data-target="8">0</h2>
+
+<p>Years Experience</p>
+
+</div>
+
+<div class="stat">
+
+<h2 class="counter" data-target="100">0</h2>
+
+<p>Positive Reviews</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Testimonials</h2>
+
+<div class="testimonials">
+
+<div class="testimonial">
+
+<p>
+
+"She transformed Mathematics into my favourite subject. I achieved an A* in my O Levels."
+
+</p>
+
+<br>
+
+<strong>- Ali Ahmed</strong>
+
+</div>
+
+<div class="testimonial">
+
+<p>
+
+"Excellent teaching methods, detailed explanations and lots of practice questions."
+
+</p>
+
+<br>
+
+<strong>- Ayesha Malik</strong>
+
+</div>
+
+<div class="testimonial">
+
+<p>
+
+"I improved from a C grade to an A within six months."
+
+</p>
+
+<br>
+
+<strong>- Hassan Khan</strong>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="contact-section" id="contact">
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <span class="contact-tag">
+                CONTACT ME
+            </span>
+
+            <h2>
+
+                Let's Build Your
+                Mathematics Confidence
+
+            </h2>
+
+            <p>
+
+                Whether you're preparing for O Level, A Level,
+                IGCSE, GCSE, or university entrance exams,
+                I'd love to help you achieve your academic goals.
+
+            </p>
+
+            <div class="contact-card">
+
+                <i class="fas fa-phone-alt"></i>
+
+                <div>
+
+                    <h4>Phone</h4>
+
+                    <span>+92 300 1234567</span>
+
+                </div>
+
+            </div>
+
+            <div class="contact-card">
+
+                <i class="fas fa-envelope"></i>
+
+                <div>
+
+                    <h4>Email</h4>
+
+                    <span>hello@mathmentor.com</span>
+
+                </div>
+
+            </div>
+
+            <div class="contact-card">
+
+                <i class="fas fa-location-dot"></i>
+
+                <div>
+
+                    <h4>Location</h4>
+
+                    <span>Islamabad, Pakistan</span>
+
+                </div>
+
+            </div>
+
+            <div class="contact-buttons">
+
+                <a href="#" class="whatsapp-btn">
+
+                    <i class="fab fa-whatsapp"></i>
+
+                    WhatsApp
+
+                </a>
+
+                <a href="#" class="email-btn">
+
+                    <i class="fas fa-paper-plane"></i>
+
+                    Email Me
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="contact-form">
+
+            <form>
+
+                <div class="input-group">
+
+                    <input type="text" required>
+
+                    <label>Full Name</label>
+
+                </div>
+
+                <div class="input-group">
+
+                    <input type="email" required>
+
+                    <label>Email Address</label>
+
+                </div>
+
+                <div class="input-group">
+
+                    <input type="text">
+
+                    <label>Subject</label>
+
+                </div>
+
+                <div class="input-group">
+
+                    <textarea rows="6" required></textarea>
+
+                    <label>Your Message</label>
+
+                </div>
+
+                <button>
+
+                    Send Message
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+
+    <div class="footer-top"></div>
+
+    <div class="footer-container">
+
+        <!-- Brand -->
+
+        <div class="footer-column">
+
+            <h2 class="footer-logo">
+
+                <span>∑</span> MathMentor
+
+            </h2>
+
+            <p>
+
+                Inspiring confidence in Mathematics through
+                conceptual learning, personalized tutoring,
+                and proven exam success.
+
+            </p>
+
+        </div>
+
+        <!-- Links -->
+
+        <div class="footer-column">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Results</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- Subjects -->
+
+        <div class="footer-column">
+
+            <h3>Subjects</h3>
+
+            <ul>
+
+                <li>O Level</li>
+                <li>A Level</li>
+                <li>IGCSE</li>
+                <li>GCSE</li>
+                <li>SAT Math</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Contact -->
+
+        <div class="footer-column">
+
+            <h3>Contact</h3>
+
+            <ul>
+
+                <li>📞 +92 300 1234567</li>
+                <li>✉️ hello@mathmentor.com</li>
+                <li>📍 Islamabad, Pakistan</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="footer-social">
+
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+        <a href="#"><i class="fab fa-instagram"></i></a>
+
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+        <a href="#"><i class="fab fa-youtube"></i></a>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+
+            © 2026 MathMentor • All Rights Reserved
+
+        </p>
+
+        <a href="#home" class="back-top">
+
+            ↑ Back to Top
+
+        </a>
+
+    </div>
+
+</footer>
+<script>
+
+const counters=document.querySelectorAll(".counter");
+
+counters.forEach(counter=>{
+
+const update=()=>{
+
+const target=+counter.dataset.target;
+
+const c=+counter.innerText;
+
+const inc=target/100;
+
+if(c<target){
+
+counter.innerText=Math.ceil(c+inc);
+
+setTimeout(update,20);
+
+}else{
+
+counter.innerText=target;
+
+}
+
+}
+
+update();
+
+});
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.style.width=entry.target.dataset.width;
+
+}
+
+});
+
+});
+
+document.querySelectorAll(".progress").forEach(bar=>{
+
+observer.observe(bar);
+
+});
+
+</script>
+
+</body>
+</html>
